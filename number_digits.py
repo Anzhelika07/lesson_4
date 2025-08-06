@@ -1,4 +1,4 @@
-number = int(input("Введите целое число: "))
+number = abs(int(input("Введите целое число: ")))
 
 digits_sum = 0
 odd_digits_sum = 0
