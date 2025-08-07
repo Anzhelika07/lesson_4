@@ -1,3 +1,6 @@
+from datetime import date
+
+
 class Person:
     MIN_AGE = 15
 
@@ -55,9 +58,11 @@ class Person:
             self.__age = age
             print("Возраст был изменен")
 
-
     def __repr__(self):
         return f"{self.__family_name} {self.__name} {self.__middle_name}"
 
-    def get_age(self):
-        return self.__age
+    def get_birth_year(self):
+        current_date = date.today()
+        year = int(current_date.year)
+        age = abs(int(self.__age))
+        return year - age

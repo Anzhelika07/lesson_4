@@ -7,5 +7,5 @@ age = input("Введите ваш возраст: ")
 
 person = Person(name, middle_name, family_name, age)
 
-current_age = person.get_age()
-print(f"{person} возраст {current_age} лет")
+birth_year = person.get_birth_year()
+print(f"{person} год рождения: {birth_year}")
